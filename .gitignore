@@ -1,0 +1,112 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# ─────────────────────────
+# Node
+# ─────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ─────────────────────────
+# Output / Build
+# ─────────────────────────
+dist/
+dist-ssr/
+out/
+build/
+release/
+app-release/
+app-builds/
+
+# Vite
+.vite/
+
+# Electron Forge / Builder / Packager
+out/
+release/
+*.asar
+
+# ─────────────────────────
+# Environment Variables
+# ─────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─────────────────────────
+# OS / Editor files
+# ─────────────────────────
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ
+.idea/
+
+# ─────────────────────────
+# Electron Specific
+# ─────────────────────────
+
+# Compiled native modules
+*.node
+
+# Crash reports
+electron.crashreporter/
+
+# Debug logs
+debug.log
+debug.log.*
+
+# Temporary files
+temp/
+tmp/
+
+# ─────────────────────────
+# TypeScript
+# ─────────────────────────
+*.tsbuildinfo
+
+# ─────────────────────────
+# Testing
+# ─────────────────────────
+coverage/
+*.lcov
+
+# ─────────────────────────
+# Optional
+# ─────────────────────────
+# If using Next.js inside Electron
+.next/
