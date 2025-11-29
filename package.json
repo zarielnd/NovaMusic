@@ -7,9 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron:dev": "cross-env VITE_DEV_SERVER_URL=http://localhost:5000 electron .",
+    "build:web": "vite build",
+    "build:electron": "tsc -p tsconfig.node.json",
+    "build:desktop": "npm run build:web && npm run build:electron && electron-builder"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.90.11",
     "axios": "^1.13.2",
     "howler": "^2.2.4",
     "lucide-react": "^0.555.0",
@@ -26,6 +31,8 @@
     "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "^10.4.22",
     "babel-plugin-react-compiler": "^1.0.0",
+    "electron": "^39.2.4",
+    "electron-builder": "^26.0.12",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
